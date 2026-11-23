@@ -1,0 +1,18 @@
+{
+  "name": "bly-and-bite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Pie ordering and accommodation booking demos that work with WhatsApp.",
+  "scripts": {
+    "test": "node --test pies/test/*.test.js stays/test/*.test.js",
+    "serve": "npx --yes serve -l 8080 .",
+    "chat:pies": "node pies/dev/chat.js",
+    "chat:stays": "node stays/dev/chat.js",
+    "bot:dev:pies": "npx --yes wrangler@4 dev -c pies/wrangler.toml",
+    "bot:dev:stays": "npx --yes wrangler@4 dev -c stays/wrangler.toml",
+    "bot:deploy:pies": "npx --yes wrangler@4 deploy -c pies/wrangler.toml",
+    "bot:deploy:stays": "npx --yes wrangler@4 deploy -c stays/wrangler.toml"
+  },
+  "engines": { "node": ">=20" }
+}

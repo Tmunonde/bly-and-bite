@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bly & Bite: order pies or book a place to stay</title>
+  <meta name="description" content="Order pies for your shop or book a bed for the night, straight through WhatsApp. No app needed.">
+  <meta name="theme-color" content="#ffd21f">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23ffd21f%22/><text x=%2250%22 y=%2270%22 font-family=%22Impact,sans-serif%22 font-size=%2260%22 text-anchor=%22middle%22>B</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --yellow: #ffd21f; --ink: #111111; --green: #0b6b32; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--yellow); color: var(--ink); font-family: Archivo, system-ui, sans-serif; }
+    a { color: var(--ink); }
+    a:hover { color: var(--green); }
+    a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
+    .display { font-family: "Bowlby One", Impact, sans-serif; font-weight: 400; text-transform: uppercase; }
+
+    header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding: 20px 0; }
+    .logo { font-size: 24px; text-decoration: none; }
+    .wa { display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; background: var(--ink); color: var(--yellow); text-decoration: none; font-weight: 800; font-size: 15px; }
+    .wa:hover { color: #fff; }
+
+    .hero { padding: 40px 0 56px; position: relative; }
+    .hero h1 { margin: 0; font-size: clamp(52px, 9.5vw, 132px); line-height: .95; max-width: 980px; }
+    .hero p { margin: 28px 0 0; font-size: clamp(18px, 2.2vw, 22px); font-weight: 600; max-width: 560px; line-height: 1.4; }
+    .sticker { position: absolute; right: 8px; top: 64px; transform: rotate(8deg); background: #fff; border: 3px solid var(--ink); padding: 12px 18px; font-size: 20px; }
+    @media (max-width: 760px) { .sticker { position: static; display: inline-block; margin-top: 28px; transform: rotate(-3deg); font-size: 16px; } }
+
+    .apps { display: flex; flex-wrap: wrap; gap: 28px 24px; padding-bottom: 56px; }
+    .app { flex: 1 1 420px; min-width: 0; padding: 36px 32px; display: flex; flex-direction: column; gap: 18px; }
+    .app.pies { background: var(--ink); color: var(--yellow); box-shadow: 10px 10px 0 #fff; }
+    .app.stays { background: #fff; border: 3px solid var(--ink); box-shadow: 10px 10px 0 var(--ink); }
+    .kicker { margin: 0; font-weight: 800; font-size: 14px; text-transform: uppercase; letter-spacing: .12em; }
+    .pies .kicker { color: #fff; }
+    .stays .kicker { color: var(--green); }
+    .app h2 { margin: 0; font-size: clamp(38px, 5vw, 52px); line-height: 1; }
+    .app p.body { margin: 0; font-size: 18px; line-height: 1.5; }
+    .pies p.body { color: #fff; }
+    .btn { align-self: flex-start; margin-top: 8px; padding: 16px 26px; text-decoration: none; font-weight: 800; font-size: 18px; text-transform: uppercase; }
+    .pies .btn { background: var(--yellow); color: var(--ink); }
+    .pies .btn:hover { background: #fff; }
+    .stays .btn { background: var(--ink); color: var(--yellow); }
+    .stays .btn:hover { color: #fff; }
+
+    .steps { border-top: 3px solid var(--ink); padding: 28px 0; display: flex; flex-wrap: wrap; gap: 16px 40px; font-weight: 800; font-size: 18px; text-transform: uppercase; list-style: none; margin: 0; }
+    footer { border-top: 3px solid var(--ink); padding: 20px 0 32px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 15px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo display" href="./">Bly &amp; Bite</a>
+      <a class="wa" href="https://wa.me/27672075483" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 18.8L4 20z"/></svg>
+        067 207 5483
+      </a>
+    </header>
+
+    <section class="hero">
+      <h1 class="display">Hungry?<br>Tired?<br>Just WhatsApp.</h1>
+      <p>Order pies for your shop or book a bed for the night. Pick what you want and it goes straight to our WhatsApp.</p>
+      <span class="sticker display">No app needed</span>
+    </section>
+
+    <main class="apps">
+      <article class="app pies">
+        <p class="kicker">Bite · for shops</p>
+        <h2 class="display">Pies &amp; biltong</h2>
+        <p class="body">Steak &amp; kidney, pepper steak, chicken &amp; mushroom and Johan's chilli biltong. Delivered in Bloemfontein, Pretoria and Rustenburg.</p>
+        <a class="btn" href="pies/">Order now</a>
+      </article>
+      <article class="app stays">
+        <p class="kicker">Bly · for travellers</p>
+        <h2 class="display">Places to stay</h2>
+        <p class="body">Guesthouses, B&amp;Bs and self-catering in Bloemfontein, Pretoria, Rustenburg, Clarens and Parys. The host confirms with you on WhatsApp.</p>
+        <a class="btn" href="stays/">Find a stay</a>
+      </article>
+    </main>
+
+    <ol class="steps">
+      <li>1. Choose</li>
+      <li>2. Tap send</li>
+      <li>3. We reply on WhatsApp</li>
+    </ol>
+
+    <footer>
+      <span>Bly &amp; Bite</span>
+      <span><a href="pies/bot.html">Try the ordering bot</a> · <a href="stays/bot.html">Try the booking bot</a></span>
+    </footer>
+  </div>
+</body>
+</html>
